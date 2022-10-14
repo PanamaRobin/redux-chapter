@@ -11,7 +11,7 @@ import * as fromViewDetail from '../../store/view-detail/view-detail.actions';
   styleUrls: ['./characters.page.scss'],
 })
 export class CharactersPage implements OnInit {
-  public charactersList: [];
+  public charactersList: ICharacterBody[];
   constructor(
     private readonly rickMorty: RickMortyService,
     private readonly navController: NavController,
