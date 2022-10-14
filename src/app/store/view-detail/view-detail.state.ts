@@ -1,6 +1,6 @@
-import { IViewDetail } from "./view-detail.models";
+import { ICharacterBody } from "./view-detail.models";
 
 
 export interface ViewDetailState {
-  detail: IViewDetail;
+  detail: ICharacterBody;
 }
