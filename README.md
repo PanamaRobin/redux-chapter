@@ -1,15 +1,12 @@
-# Taller de practica de Redux usando Rick &amp; Morty API
+# redux-chapter
+Taller de practica de Redux usando Rick &amp; Morty API
 
-## Pasos para implementar Redux
 
-### 1. Instalacion de paquetes
+## instalar dependencias 
+npm i
 
-> npm install @ngrx/store --save
+## instalar redux
+ng add @ngrx/store@latest
 
-### 2. Instalacion de paquetes
-
-> npm install @ngrx/store --save
-
-### 3. Instalacion de paquetes
-
-> npm install @ngrx/store --save
+## dev tool
+ng add @ngrx/store-devtools@latest

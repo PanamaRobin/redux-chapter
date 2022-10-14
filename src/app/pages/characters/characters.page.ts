@@ -1,7 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { NavController } from '@ionic/angular';
+import { Store } from '@ngrx/store';
+import { GlobalState } from 'src/app/store/store.config';
+import { IViewDetail } from 'src/app/store/view-detail/view-detail.models';
 import { RickMortyService } from '../../services/rick-morty.service';
-
+import * as fromViewDetail from '../../store/view-detail/view-detail.actions'
 @Component({
   selector: 'app-characters',
   templateUrl: './characters.page.html',
@@ -11,7 +14,8 @@ export class CharactersPage implements OnInit {
   public charactersList: [];
   constructor(
     private readonly rickMorty: RickMortyService,
-    private readonly navController: NavController
+    private readonly navController: NavController,
+    private store: Store<GlobalState>
   ) {}
 
   async ngOnInit(): Promise<void> {
@@ -22,6 +26,14 @@ export class CharactersPage implements OnInit {
   }
 
   selectedCharacter(character) {
+    const charr : IViewDetail = {
+      id: character.id,
+      name: character.name
+    }
+    this.store.dispatch(
+      fromViewDetail.setDetailSuccessAction({payload: charr}) 
+    )
+
     const state = {
       character,
     };
