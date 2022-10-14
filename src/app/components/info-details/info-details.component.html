@@ -1,0 +1,28 @@
+<ion-list class="list-content">
+  <ion-item color="light">
+    <ion-label>
+      <ion-badge color="warning">Gender</ion-badge>
+      <p>{{character.gender}}</p>
+    </ion-label>
+  </ion-item>
+  <ion-item color="light">
+    <ion-label>
+      <ion-badge slot="start" color="success"
+        >Last known location</ion-badge
+      >
+      <p slot="end" class="ion-text-wrap">{{character.location.name}}</p>
+    </ion-label>
+  </ion-item>
+  <ion-item color="light">
+    <ion-label>
+      <ion-badge slot="start" color="primary">Status</ion-badge>
+      <p slot="end" class="ion-text-wrap">{{character.status}}</p>
+    </ion-label>
+  </ion-item>
+  <ion-item color="light" *ngIf="character.type">
+    <ion-label>
+      <ion-badge slot="start" color="danger">Type</ion-badge>
+      <p slot="end" class="ion-text-wrap">{{character.type}}</p>
+    </ion-label>
+  </ion-item>
+</ion-list>
