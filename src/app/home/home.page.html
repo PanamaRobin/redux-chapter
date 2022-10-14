@@ -1,0 +1,15 @@
+<app-header [title]="'Redux Chapter'"></app-header>
+
+<ion-content [fullscreen]="true">
+  <ion-list>
+    <ion-list-header>
+      <ion-label>Rick & Morty API</ion-label>
+      <ion-button>Ver historial</ion-button>
+    </ion-list-header>
+    <app-section-card
+      [sections]="sections"
+      (urlString)="handleSelection($event)"
+    >
+    </app-section-card>
+  </ion-list>
+</ion-content>

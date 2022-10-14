@@ -1,0 +1,8 @@
+<ion-card *ngFor="let item of sections" (click)="onClick(item.url)">
+  <ion-card-header>
+    <ion-card-title>{{item.name}}</ion-card-title>
+  </ion-card-header>
+  <ion-card-content>
+    {{item.content}}
+  </ion-card-content>
+</ion-card>
