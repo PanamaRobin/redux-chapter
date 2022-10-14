@@ -26,14 +26,14 @@ export class CharactersPage implements OnInit {
   }
 
   selectedCharacter(character) {
-    const charr: ICharacterBody = character;
     this.store.dispatch(
-      fromViewDetail.setDetailSuccessAction({ payload: charr })
+      fromViewDetail.setDetailSuccessAction({ payload: character })
     );
 
-    const state = {
-      character,
-    };
-    this.navController.navigateForward(`/characters/info`, { state });
+    // const state = {
+    //   character,
+    // };
+    // this.navController.navigateForward(`/characters/info`, { state });
+    this.navController.navigateForward(`/characters/info`);
   }
 }

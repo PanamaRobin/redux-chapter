@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { ICharacterBody } from './../../store/view-detail/view-detail.models';
 
 @Component({
   selector: 'app-info-card',
@@ -6,10 +7,8 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./info-card.component.scss'],
 })
 export class InfoCardComponent implements OnInit {
-
-  @Input() character: {};
-  constructor() { }
+  @Input() character: ICharacterBody;
+  constructor() {}
 
   ngOnInit() {}
-
 }

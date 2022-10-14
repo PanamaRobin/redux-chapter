@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { ICharacterBody } from './../../store/view-detail/view-detail.models';
 
 @Component({
   selector: 'app-info-details',
@@ -6,7 +7,7 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./info-details.component.scss'],
 })
 export class InfoDetailsComponent implements OnInit {
-  @Input() character: {};
+  @Input() character: ICharacterBody;
   constructor() {}
 
   ngOnInit() {}
