@@ -7,3 +7,8 @@ Asegurarnos de tener node 18 o superior
 - Commitear cambios
 - ng update @angular/core@16 @angular/cli@16
 - Commitear cambios
+- sudo npm i @ngrx/store@16
+- Commitear
+- sudo npm i -D @capacitor/cli@latest
+- Commitear xd
+- ng update @angular/core@17 @angular/cli@17
