@@ -1,5 +1,6 @@
 # Migracion angular 17
-
+Lo primero es instalar los paquetes del proyecto
+- npm i
 ## Asegurarnos de tener node 18 o superior
 - ng update @angular/core@15 @angular/cli@15
 - Commitear cambios
